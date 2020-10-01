@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataConfirmActivity">
+    //Layout for all content
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="104dp">
+    //Title
+        <TextView
+        android:id="@+id/dataView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dataconfirm_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent"
+        app:fontFamily="@font/montserrat"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    //Name Label
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/dataconfirm_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+    //Name Data
+        <TextView
+            android:id="@+id/name_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
+
+            />
+    //Date Label
+        <TextView
+            android:id="@+id/date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/dataconfirm_date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+    //Date Data
+        <TextView
+            android:id="@+id/date_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
+             />
+    //Phone Label
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/dataconfirm_phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+    //Phone Data
+        <TextView
+            android:id="@+id/phone_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
+             />
+    //Email Label
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/dataconfirm_email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+    //Email Data
+        <TextView
+            android:id="@+id/email_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
+             />
+    //Description Label
+        <TextView
+            android:id="@+id/description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/dataconfirm_description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+    //Description Data
+        <TextView
+            android:id="@+id/description_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
+             />
+
+
+    //Layout for Buttons
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="498dp"
+        tools:ignore="MissingConstraints">
+    //Edit Data Button
+        <Button
+            android:id="@+id/dataconfirm_backbtn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryLight"
+            android:text="@string/dataconfirm_backbtn"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    //Confirm Data Button without function yet
+        <Button
+            android:id="@+id/dataconfirm_okbtn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimaryText"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:text="@string/dataconfirm_okbtn"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </LinearLayout>//end Layout for Buttons
+    </LinearLayout>//end Layout for Content
+</androidx.constraintlayout.widget.ConstraintLayout>
